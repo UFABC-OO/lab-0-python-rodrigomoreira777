@@ -1,15 +1,19 @@
 class OlaUfabc:
-    'Classe para implementar um "Hello World"'
+    'Classe para imprimir um "Hello World"'
     pass
 
-    def imprime(self):
+    def imprime(*self):
         'Metodo que imprime um "Hello World"'
-        ola = 'Olá Mundo!'
-        return ola
+        return f'Sou UFABC!'
+
+
+def teste_imprime():
+    assert OlaUfabc.imprime() == 'Sou UFABC!'
 
 
 teste = OlaUfabc
+print(teste.imprime())
 
 
-def test_imprime():
-    assert OlaUfabc.imprime(teste) == 'Olá Mundo!'
+
+
